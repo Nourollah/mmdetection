@@ -169,7 +169,7 @@ class SimOTAAssigner(BaseAssigner):
             (~is_in_boxes_and_center) * INF)
 
         matched_pred_ious, matched_gt_inds = \
-            self.dynamic_k_matching(
+                self.dynamic_k_matching(
                 cost_matrix, pairwise_ious, num_gt, valid_mask)
 
         # convert to AssignResult format
